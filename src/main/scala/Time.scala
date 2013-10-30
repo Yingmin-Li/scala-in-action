@@ -1,4 +1,4 @@
-class Time(val hours: Int, val minutes: Int) {
+case class Time(hours: Int, minutes: Int) {
 
   val asMinutes: Int =
     hours * 60 + minutes
