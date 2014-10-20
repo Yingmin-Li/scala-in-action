@@ -1,8 +1,9 @@
-lazy val scalaInAction = project in file(".")
+lazy val scalaInAction = project.in(file("."))
 
 name := "scala-in-action"
 
 libraryDependencies ++= List(
+  Library.scalaTest
 )
 
-initialCommands := """|import de.heikoseeberger.scalainaction._""".stripMargin
+fork in run := true
